@@ -2,10 +2,11 @@
 
 | Date | What Was Covered |
 |------|------------------|
-|1/24/19|[Something]()|
+|1/24/19|[Intro to C++]()|
+|1/29/19|[Intro to C++ Continued]()
 
 
-## Something
+## Intro to C++
 - [Code]()
 - [Notes]()
 ### Code
