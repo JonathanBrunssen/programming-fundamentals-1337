@@ -26,4 +26,3 @@ main()
   - "cout<<" is the character output for C++.
   - "pow" is how you use the power method in C++.
   - pre processor [#define keyword value] where ever the program sees the keyword it replaces it with the value.
-  -
