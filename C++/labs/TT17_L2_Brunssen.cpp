@@ -29,7 +29,7 @@ main()
 
       space--;
 
-      for (int bar = 1; bar<= 2*k-1; bar++)
+      for (int bar = 1; bar<= 2*foo-1; bar++)
       {
         cout<<"*";
       }
@@ -39,27 +39,28 @@ main()
 
     space = 1;
     //create the bottom half of the diamond
-    for (foo = 1; foo<= n - 1; foo++)
+    for (int foo = 1; foo<= n - 1; foo++)
     {
-      for (bar = 1; bar<= space; bar++)
+      for (int bar = 1; bar<= space; bar++)
       {
         cout<<" ";
       }
 
       space++;
 
-      for (bar = 1 ; bar<= 2*(n-k)-1; bar++)
+      for (int bar = 1 ; bar<= 2*(n-foo)-1; bar++)
       {
         cout<<"*";
       }
 
       cout<<"\n";
     }
-    cout <<"I am done drawing your diamond!"
+    cout <<"I am done drawing your diamond!\n";
     goto start;
   }
   else if(n == 0){
-    break;
+  	cout << "Thank you for using the app! Good-bye!";
+    return 0;
   }
   else{
     cout << "There was an error... try again.\n";
@@ -67,3 +68,75 @@ main()
   }
   return 0;
 }
+
+/*
+Enter number of rows(or 0 to quit): 7
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+ ***********
+  *********
+   *******
+    *****
+     ***
+      *
+I am done drawing your diamond!
+Enter number of rows(or 0 to quit): 5
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+I am done drawing your diamond!
+Enter number of rows(or 0 to quit): 20
+                   *
+                  ***
+                 *****
+                *******
+               *********
+              ***********
+             *************
+            ***************
+           *****************
+          *******************
+         *********************
+        ***********************
+       *************************
+      ***************************
+     *****************************
+    *******************************
+   *********************************
+  ***********************************
+ *************************************
+***************************************
+ *************************************
+  ***********************************
+   *********************************
+    *******************************
+     *****************************
+      ***************************
+       *************************
+        ***********************
+         *********************
+          *******************
+           *****************
+            ***************
+             *************
+              ***********
+               *********
+                *******
+                 *****
+                  ***
+                   *
+I am done drawing your diamond!
+Enter number of rows(or 0 to quit): 0
+Thank you for using the app! Good-bye!
+*/
