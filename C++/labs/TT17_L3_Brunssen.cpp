@@ -33,7 +33,6 @@ main()
 			int num2{(rand()%101)};//get a number between 0-100
 			int comp_pick = rand()%4;
 			option = options[comp_pick];
-			cout << option << endl;
 			//test if the option is a good option;
 			switch(option)
 			{
@@ -56,16 +55,19 @@ main()
 			}
 			
 		}
-		cout << option <<endl;
 		switch(option)
 		{
 			case'a':
+				cout << option <<endl;
 				break;
 			case's':
+				cout << option <<endl;
 				break;
 			case'm':
+				cout << option <<endl;
 				break;
 			case'd':
+				cout << option <<endl;
 				break;
 		}
 		--num_of_questions;
