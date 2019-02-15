@@ -9,12 +9,21 @@ Purpose: Write code for a 3rd Grade math tutor program that provides simple addi
 #include <iostream>
 #include <cstdlib>
 #include <typeinfo>
+#include <ctime>
 using namespace std;
-main()
+int main()
 {
+	srand(time(NULL));
 	//create variables for program
 	int num_of_questions{};//make a variable for the number of questions
-	bool is_running{true};
+	double total_num_of_questions {};
+	int answer{};
+	int user_answer{};
+	double num_correct{};
+	int num1{};
+	int num2{};
+	double result{};
+	
 	const char options [4] = {'a','s','m','d'};
 	char option{};
 	
@@ -22,15 +31,16 @@ main()
 	cout << "Hello and welcome to the basic math tutor program!\n";
 	cout << "How many practice problems would you like to do: ";
 	cin >> num_of_questions;
+	total_num_of_questions = num_of_questions;
 	
 	//enter the loop
-	while(is_running && num_of_questions > 0)
+	while(num_of_questions > 0 && user_answer >= 0)
 	{
 		bool question_picked{false};
 		while(!question_picked)
 		{
-			int num1{(rand()%101)};//get a number between 0-100
-			int num2{(rand()%101)};//get a number between 0-100
+			num1 = (rand()%101);//get a number between 0-100
+			num2 = (rand()%101);//get a number between 0-100
 			int comp_pick = rand()%4;
 			option = options[comp_pick];
 			//test if the option is a good option;
@@ -55,25 +65,94 @@ main()
 			}
 			
 		}
-		switch(option)
+		
+		switch(option)//create the problem
 		{
 			case'a':
-				cout << option <<endl;
+				answer = num1 + num2;
+				cout << "what is " << num1 << " + " << num2 << "?(or enter a negative number to quit) ";
+				cin >> user_answer;
+				if(user_answer == answer)
+				{
+					++num_correct;
+					cout << "That was correct!\n";
+				}
+				else
+				{
+					cout << "Sorry that is not correct. " << num1 + num2 << " is the correct answer.\n";
+				}
 				break;
 			case's':
-				cout << option <<endl;
+				answer = num1 - num2;
+				cout << "what is " << num1 << " - " << num2 << "?(or enter a negative number to quit) ";
+				cin >> user_answer;
+				if(user_answer == answer)
+				{
+					++num_correct;
+					cout << "That was correct!\n";
+				}
+				else
+				{
+					cout << "Sorry that is not correct. " << num1 - num2 << " is the correct answer.\n";
+				}
 				break;
 			case'm':
-				cout << option <<endl;
+				answer = num1 * num2;
+				cout << "what is " << num1 << " * " << num2 << "?(or enter a negative number to quit) ";
+				cin >> user_answer;
+				if(user_answer == answer)
+				{
+					++num_correct;
+					cout << "That was correct!\n";
+				}
+				else
+				{
+					cout << "Sorry that is not correct. " << num1 * num2 << " is the correct answer.\n";
+				}
 				break;
 			case'd':
-				cout << option <<endl;
+				answer = num1 / num2;
+				cout << "what is " << num1 << " / " << num2 << "?(or enter a negative number to quit) ";
+				cin >> user_answer;
+				if(user_answer == answer)
+				{
+					++num_correct;
+					cout << "That was correct!\n";
+				}
+				else
+				{
+					cout << "Sorry that is not correct. " << num1 / num2 << " is the correct answer.\n";
+				}
 				break;
 		}
 		--num_of_questions;
-		cout << num_of_questions << endl;
 	}
-	
-	//tell the user the program is over
+	result = (num_correct/total_num_of_questions)*100;
+	cout << "You got " << num_correct << " correct out of " << total_num_of_questions << " questions that is a " << result << "%\n";
 	cout << "Thank you for using the basic math tutor program!\n";
+	return 0;
 }
+/*
+Hello and welcome to the basic math tutor program!
+How many practice problems would you like to do: 10
+what is 62 - 6?(or enter a negative number to quit) 56
+That was correct!
+what is 100 - 60?(or enter a negative number to quit) 40
+That was correct!
+what is 89 - 30?(or enter a negative number to quit) 59
+That was correct!
+what is 60 - 33?(or enter a negative number to quit) 27
+That was correct!
+what is 18 + 30?(or enter a negative number to quit) 48
+That was correct!
+what is 82 - 80?(or enter a negative number to quit) 2
+That was correct!
+what is 98 - 40?(or enter a negative number to quit) 58
+That was correct!
+what is 40 + 3?(or enter a negative number to quit) 43
+That was correct!
+what is 27 + 65?(or enter a negative number to quit) -1
+Sorry that is not correct. 92 is the correct answer.
+You got 8 correct out of 10 questions that is a 80%
+Thank you for using the basic math tutor program!
+*/
