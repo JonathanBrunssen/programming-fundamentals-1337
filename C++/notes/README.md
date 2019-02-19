@@ -5,6 +5,7 @@
 |1/24/19|[Intro to C++](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#intro-to-c)|
 |1/29/19|[Intro to C++ Continued](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#intro-to-c)|
 |1/31/19|[Expressions and Interactivity](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#expressions-and-interactivity)|
+|2/19/19|[Functions]()|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -55,7 +56,7 @@ main()
   cout << fixed;
   const double TAX_RATE = 0.0825;
   cout << "Your tax would be: $" << food_cost * TAX_RATE << endl;
-  
+
   cout << "How many people will split the bill? ";
   int persons {0};
   cin >> persons;
@@ -73,3 +74,14 @@ main()
 ```
 ### Notes
   -
+
+## Functions
+- [Code]()
+- [Notes]()
+
+### Code
+```cpp
+
+```
+
+### Notes
