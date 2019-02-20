@@ -5,7 +5,7 @@
 |1/24/19|[Intro to C++](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#intro-to-c)|
 |1/29/19|[Intro to C++ Continued](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#intro-to-c)|
 |1/31/19|[Expressions and Interactivity](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#expressions-and-interactivity)|
-|2/19/19|[Functions]()|
+|2/19/19|[Functions](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -76,12 +76,31 @@ main()
   -
 
 ## Functions
-- [Code]()
-- [Notes]()
+- [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code-2)
+- [Notes](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#notes-2)
 
 ### Code
 ```cpp
-
+#include <iostream>
+#include <iomain>
+using namespace std;
+/*variable NAME(arg){
+this is the format of a cpp class
+}*/
+double avg(double a, double b, double c){
+  return  (a+b+c)/3
+}
+main(){
+  cout << "the average of 10, 15, 20 is: " << avg(10,15,20) << endl;
+  return 0;
+}
 ```
 
 ### Notes
+- Modular programming: breaking a program up into smaller, manageable functions of modules. It supports the divide-and-conquer approach to solving a problem.
+- Function: a collection of statements to preform a specific task
+- Motivation for modular programming
+  - Simplifies the process of writing programs
+  - Improves the maintainability of programs
+- Function call: a statement that causes a function to execute
+- Function definition: the statements that make up a function
