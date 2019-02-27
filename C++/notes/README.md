@@ -6,6 +6,8 @@
 |1/29/19|[Intro to C++ Continued](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#intro-to-c)|
 |1/31/19|[Expressions and Interactivity](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#expressions-and-interactivity)|
 |2/19/19|[Functions](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
+|2/26/19|[Functions cont.](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
+|2/26/19|[Test review]()|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -87,8 +89,8 @@ using namespace std;
 /*variable NAME(arg){
 this is the format of a cpp class
 }*/
-double avg(double a, double b, double c){
-  return  (a+b+c)/3
+double avg(double a, double b = 0.0, double c){ //double b has a default of zero
+  return  (a+b+c)/3;
 }
 main(){
   cout << "the average of 10, 15, 20 is: " << avg(10,15,20) << endl;
@@ -104,3 +106,28 @@ main(){
   - Improves the maintainability of programs
 - Function call: a statement that causes a function to execute
 - Function definition: the statements that make up a function
+- Default arguments are values that are passed automatically if arguments are missing from a function call
+- Default arguments must be a constant or literal declared in the prototype header
+- Multi-paramater functions may have default arguments for some or all parameters
+- Reference variable is an alias for another variable
+- Reference variable is defined wit an & in the protottype and in the header
+  - void getDimenstions(int &,int &)
+- Overloading functions function's with the same name
+- exit() terminates the function
+- exit() can be called from any function
+- Requires cstdlib in header file
+
+## Test Review
+  - Phase 1
+    - At home multiple choice
+    - 40 questions
+    - due midnight on the day of phase 2
+  - Phase 2
+    - In class multiple choice
+    - 16 questions
+    - Is password protected
+    - Done during lab
+  - Phase 3
+    - In class lab
+    - Done the class after phase 2 (if phase 2 is on thursday phase 3 is on tuesday)
+    - Bring your laptop!
