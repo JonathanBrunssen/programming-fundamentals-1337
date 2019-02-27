@@ -7,7 +7,7 @@
 |1/31/19|[Expressions and Interactivity](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#expressions-and-interactivity)|
 |2/19/19|[Functions](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 |2/26/19|[Functions cont.](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
-|2/26/19|[Test review]()|
+|2/26/19|[Test review](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -89,10 +89,37 @@ using namespace std;
 /*variable NAME(arg){
 this is the format of a cpp class
 }*/
-double avg(double a, double b = 0.0, double c){ //double b has a default of zero
+/*double avg(double a, double b = 0.0, double c){ //double b has a default of zero
   return  (a+b+c)/3;
+}*/
+void comparison(){
+  cout << "Enter a water temp in Fahrenheit: ";
+  double water_temp{};
+  cin >> water_temp;
+  if(water_temp <= 32){
+    cout << "water is freezing.\n";
+  }
+  else if(water_temp >= 128){
+    cout << "water is boiling.\n";
+  }
+  else(){
+    cout << "water is liquid.\n";
+  }
 }
 main(){
+  cout << "Start...\n";
+  while(true){
+    cout << "enter option: c)omparison q)uit: ";
+    char option{};
+    cin >> option;
+    option = tolower(option);
+    if (option == "q")
+      break;
+    else if (option == "c")
+      comparison();
+    else
+      cout << "Invalid option...\n";
+  }
   cout << "the average of 10, 15, 20 is: " << avg(10,15,20) << endl;
   return 0;
 }
@@ -110,7 +137,7 @@ main(){
 - Default arguments must be a constant or literal declared in the prototype header
 - Multi-paramater functions may have default arguments for some or all parameters
 - Reference variable is an alias for another variable
-- Reference variable is defined wit an & in the protottype and in the header
+- Reference variable is defined wit an & in the prototype and in the header
   - void getDimenstions(int &,int &)
 - Overloading functions function's with the same name
 - exit() terminates the function
@@ -129,5 +156,5 @@ main(){
     - Done during lab
   - Phase 3
     - In class lab
-    - Done the class after phase 2 (if phase 2 is on thursday phase 3 is on tuesday)
+    - Done the class after phase 2 (if phase 2 is on Thursday phase 3 is on Tuesday)
     - Bring your laptop!
