@@ -8,6 +8,7 @@
 |2/19/19|[Functions](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 |2/26/19|[Functions cont.](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 |2/26/19|[Test review](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
+|3/5/19|[Classes]()|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -158,3 +159,15 @@ main(){
     - In class lab
     - Done the class after phase 2 (if phase 2 is on Thursday phase 3 is on Tuesday)
     - Bring your laptop!
+
+## Classes
+  - [Code]()
+  - [Notes]()
+
+### Code
+
+```cpp
+
+```
+
+### Notes
