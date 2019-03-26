@@ -8,8 +8,8 @@
 |2/19/19|[Functions](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 |2/26/19|[Functions cont.](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
 |2/26/19|[Test review](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#functions)|
-|3/5/19|[Classes]()|
-|3/26/19|[]()|
+|3/5/19|[Classes](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#classes)|
+|3/26/19|[Classes cont.](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#classes)|
 
 ## Intro to C++
 - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code)
@@ -162,8 +162,8 @@ main(){
     - Bring your laptop!
 
 ## Classes
-  - [Code]()
-  - [Notes]()
+  - [Code](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#code-3)
+  - [Notes](https://github.com/JonathanBrunssen/programming-fundamentals-1337/tree/master/C%2B%2B/notes#notes-3)
 
 ### Code
 
